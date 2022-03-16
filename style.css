@@ -1,0 +1,17 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.main-container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.grid {
+    background-color: #f5f5f5f5;
+    border: .5px solid rgb(141, 139, 139);
+    height: 10px;
+    width: 10px;
+}
