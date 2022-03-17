@@ -16,10 +16,20 @@ h1.innerText = 'testing'
 
 // For some reason, I need to add a div that I can apply my grid templates to? Not create a div and apply the grid template in one go.
 
-function makeDiv(num) {
+function divMaker(num) {
     for(i = 0; i < num; i++) {
         let div = document.createElement('div');
-        div.innerText = 'test'
+        div.className = 'grid-item';
         gridContainer.append(div);
+
+        
+    }
+}
+
+function gridMaker (row, col) {
+    gridContainer.style.gridTemplateColumns = `repeat(${col}, 1fr)`;
+    gridContainer.style.gridTemplateRows = `repeat(${row}, 1fr)`;
+    for(let i = 0; i < row; i++) {
+        divMaker(col);
     }
 }
