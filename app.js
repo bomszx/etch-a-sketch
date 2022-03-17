@@ -1,10 +1,14 @@
+let gridContainer = document.querySelector('.grid-container');
+let grid = document.querySelector('.grid');
+let h1 = document.createElement('h1');
 let div = document.createElement('div');
 
-function createGrid(number) {
-    for(i = 0; i < number * number; i++) {
-        let div = document.createElement('div');
-        let mainContainer = document.querySelector('.main-container');
-        div.className = 'grid';
-        mainContainer.append(div)
-    }
-} 
+// div.className = 'grid-item';
+div.innerText = 'test'
+gridContainer.style.gridTemplateColumns = `repeat(2, 1fr)`;
+gridContainer.style.gridTemplateRows = `repeat(2, 1fr)`;
+
+gridContainer.append(div);
+// 
+
+
