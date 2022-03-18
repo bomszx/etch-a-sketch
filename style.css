@@ -6,17 +6,16 @@
 
 .main-container {
     height: 100vh;
-    background-color: orangered;
+
 }
 
 .container {
     display: flex;
-    border: 1px solid orangered;
+
 }
 
 .grid-container {
     display: grid;
-    background-color: aquamarine;
     width: 100vw;
     height: 800px;
 
@@ -29,7 +28,7 @@
 }
 
 .grid-item{
-    background-color: rgb(127, 157, 255);
+    background-color: rgb(230, 230, 230);
     outline: 1px solid rgb(20, 20, 20);
 }
 
