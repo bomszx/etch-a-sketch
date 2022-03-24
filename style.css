@@ -2,33 +2,76 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    color: yellow;
+
+}
+
+h1 {
+    font-family: 'Londrina Sketch', cursive;
+    font-size: 40px;
+    font-style: italic;
+    color: yellow;
+}
+
+input[type=button] {
+    font-family: 'Londrina Sketch', cursive;
+    font-size: 30px;
+    font-weight: 700;
+    border-radius: 3%;
+    background-color: red;
+    width: 105px;
+    margin-top: 5px;
+    border-radius: 5%;
+
+    
+}
+
+.container {
+    padding: 40px
+}
+
+.header {
+    background-color: red;
+    margin: auto;
 }
 
 .main-container {
     height: 100vh;
-
+    background-color: rgb(61, 165, 139);
 }
 
-.container {
-    display: flex;
+.border {
+    border: 50px solid red;
+    border-radius: 3%;
+    height: 700px;
+    width: 650px;
+    margin: auto;
+}
 
+.background-color {
+    background-color: red;
 }
 
 .grid-container {
     display: grid;
-    width: 100vw;
-    height: 800px;
+    height: 500px;
+    width: 550px;
+    border: 7px solid grey;
+    border-style: inset;
 
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: repeat(4, 1fr);
+    background-color: rgb(230, 230, 230);
+
 }
 
-.panel {
-    background-color: antiquewhite;
+.button-container {
+    margin-top: 20px;
+    justify-content: space-around;
+    display: flex;
 }
+
 
 .grid-item{
     background-color: rgb(230, 230, 230);
-    outline: 1px solid rgb(20, 20, 20);
+    outline: .3px solid rgb(212, 212, 212);
 }
 
