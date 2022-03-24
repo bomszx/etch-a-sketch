@@ -16,10 +16,12 @@ resetButton.addEventListener('click', function() {
 // prompt that would ask the user how many divs the user wants
 function prompter() {
     let num = prompt('Enter a number from 5-64', 64) 
-        if(num <= 5 || num >= 101) {
-            alert(`num too big, we may crash`)
-            return
-        } 
+        if(num <= 5 || num > 64) {
+            alert(`please choose a number between 5-64`)
+            prompter()
+        } else {
+            gridMaker(num,num)
+        }
     }   
 
 // create divs using DOM manipulation
@@ -54,5 +56,5 @@ function coloredBrush() {
     this.style.backgroundColor = color[Math.floor(Math.random() * color.length)];
 }
 
-// initialize using prompter function
+// initialize
 prompter() 
